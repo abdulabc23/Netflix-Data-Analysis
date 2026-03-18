@@ -1,1 +1,183 @@
-content
+Netflix Content Analysis and Insights Report
+Introduction :
+In this project we use Netflix data to understand the Movies and TV shows content posting pattern on netflix.
+Objectives:
+Understand Content Distribution.
+Identify popular genres.
+Understand countries roles
+Analyse ratings and duration
+Study Content Growth over time
+
+Dataset overview
+Total records: 8807
+Features: 12 columns
+Key columns:
+Type : Movies / Tv Shows
+Country : Production Country
+listed _in : Genre
+rating  : Content Rating
+date_added : Date Added to platform
+Duration : content Duration
+Data Preprocessing
+Steps performed:
+Handle Missing values (Replace null values with Unknown)
+Convert date_add to datetime datatype
+Created New Features
+added_year
+added_month
+Extracted 
+Duration number
+Duration type
+Remove Unnecessary Column (description)
+Applied Feature engineering to explode country and listed_in.
+Feature Engineering
+Converted Multivalues Columns into useful format using .
+	.split()
+	.explode()
+This helps in better Aggregation
+Accurate Genre Analysis
+Multi Countries Representation
+
+
+EDA
+Content Distribution:
+Movies dominate the platform in terms of content volume.
+Movies dominate the platform in terms of content volume.
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+Top Countries:
+United States Produces More content.
+Then India and united kingdom.
+
+
+
+Genre Analysis:
+Most Common Genres are 🎉
+International Movies
+Dramas
+Comedies
+Action Adventure
+
+
+
+Content Growth Overtime
+Content increased Rapidly after 2015.
+Peak Observed around 2019.
+
+
+
+Rating Analysis
+Most Content falls under 👍
+TV-MA
+TV-14
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+Duration Analysis
+Average:
+Movies   103 min
+TV Show : 1-2 Seasons
+Maximum:
+Movies :  312 min
+TV Shows : 17 Seasons.
+Genre vs Rating
+Certain genres (Drama, Crime) have higher mature ratings
+
+
+Family genres align with lower ratings
+
+
+Country vs Content Type
+Some countries produce more:
+
+
+Movies (e.g., India)
+
+
+TV Shows (e.g., US, UK)
+
+
+
+
+
+
+
+
+
+
+
+
+
+Genre Popularity (Movies vs TV Shows)
+Movies:
+Dominated by:
+
+
+Dramas
+
+
+International Movies
+
+
+
+TV Shows
+Dominated by:
+
+
+International TV Shows
+
+
+TV Dramas
+
+Key insights:
+Netflix prioritizes global content expansion
+Strong focus on Drama and International genres
+Majority of content is targeted at mature audiences
+Rapid growth between 2015–2019
+Movies dominate but TV Shows are strategically important
+
+Conclusion:
+This project demonstrates strong skills in data cleaning, feature engineering, exploratory data analysis, and insight generation using real-world data.
+Tools
+Python
+Pandas
+NumPy
+Matplotlib
+Seaborn
+Google Colab
+Credit
+
+Datasource:Kaggle  (https://www.kaggle.com/datasets/shivamb/netflix-shows)
+Regards : Abdul Qadoos Bhatti
+Linkedin :https://www.linkedin.com/in/abdulqadoosbhattii/
+
+
